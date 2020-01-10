@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAD2C43B23C6D1AE00A17E22 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C43A23C6D1AE00A17E22 /* main.c */; };
+		AAD2C44323C71C4400A17E22 /* avx.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C44223C71C4400A17E22 /* avx.c */; settings = {COMPILER_FLAGS = "-mavx"; }; };
+		AAD2C44623C71C5F00A17E22 /* avx512simd.c in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C44523C71C5F00A17E22 /* avx512simd.c */; settings = {COMPILER_FLAGS = "-mavx512f"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AAD2C43523C6D1AE00A17E22 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AAD2C43723C6D1AE00A17E22 /* SIMD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SIMD; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD2C43A23C6D1AE00A17E22 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		AAD2C44123C71C4400A17E22 /* avx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = avx.h; sourceTree = "<group>"; };
+		AAD2C44223C71C4400A17E22 /* avx.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = avx.c; sourceTree = "<group>"; };
+		AAD2C44423C71C5F00A17E22 /* avx512simd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = avx512simd.h; sourceTree = "<group>"; };
+		AAD2C44523C71C5F00A17E22 /* avx512simd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = avx512simd.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAD2C43423C6D1AE00A17E22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAD2C42E23C6D1AE00A17E22 = {
+			isa = PBXGroup;
+			children = (
+				AAD2C43923C6D1AE00A17E22 /* SIMD */,
+				AAD2C43823C6D1AE00A17E22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAD2C43823C6D1AE00A17E22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAD2C43723C6D1AE00A17E22 /* SIMD */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAD2C43923C6D1AE00A17E22 /* SIMD */ = {
+			isa = PBXGroup;
+			children = (
+				AAD2C43A23C6D1AE00A17E22 /* main.c */,
+				AAD2C44123C71C4400A17E22 /* avx.h */,
+				AAD2C44223C71C4400A17E22 /* avx.c */,
+				AAD2C44423C71C5F00A17E22 /* avx512simd.h */,
+				AAD2C44523C71C5F00A17E22 /* avx512simd.c */,
+			);
+			path = SIMD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAD2C43623C6D1AE00A17E22 /* SIMD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD2C43E23C6D1AE00A17E22 /* Build configuration list for PBXNativeTarget "SIMD" */;
+			buildPhases = (
+				AAD2C43323C6D1AE00A17E22 /* Sources */,
+				AAD2C43423C6D1AE00A17E22 /* Frameworks */,
+				AAD2C43523C6D1AE00A17E22 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SIMD;
+			productName = SIMD;
+			productReference = AAD2C43723C6D1AE00A17E22 /* SIMD */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAD2C42F23C6D1AE00A17E22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Gmingyue;
+				TargetAttributes = {
+					AAD2C43623C6D1AE00A17E22 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = AAD2C43223C6D1AE00A17E22 /* Build configuration list for PBXProject "SIMD" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAD2C42E23C6D1AE00A17E22;
+			productRefGroup = AAD2C43823C6D1AE00A17E22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAD2C43623C6D1AE00A17E22 /* SIMD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAD2C43323C6D1AE00A17E22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD2C44623C71C5F00A17E22 /* avx512simd.c in Sources */,
+				AAD2C43B23C6D1AE00A17E22 /* main.c in Sources */,
+				AAD2C44323C71C4400A17E22 /* avx.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AAD2C43C23C6D1AE00A17E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AAD2C43D23C6D1AE00A17E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AAD2C43F23C6D1AE00A17E22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AAD2C44023C6D1AE00A17E22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAD2C43223C6D1AE00A17E22 /* Build configuration list for PBXProject "SIMD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD2C43C23C6D1AE00A17E22 /* Debug */,
+				AAD2C43D23C6D1AE00A17E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD2C43E23C6D1AE00A17E22 /* Build configuration list for PBXNativeTarget "SIMD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD2C43F23C6D1AE00A17E22 /* Debug */,
+				AAD2C44023C6D1AE00A17E22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAD2C42F23C6D1AE00A17E22 /* Project object */;
+}
